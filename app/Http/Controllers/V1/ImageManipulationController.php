@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ResizeImageRequest;
 use App\Http\Requests\StoreImageManipulationRequest;
 use App\Models\Album;
 use App\Models\ImageManipulation;
@@ -29,7 +30,7 @@ class ImageManipulationController extends Controller
      * @param  \App\Http\Requests\StoreImageManipulationRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function resize(StoreImageManipulationRequest $request)
+    public function resize(ResizeImageRequest $request)
     {
         //
     }
